@@ -1,11 +1,13 @@
 from django.test import TestCase
+from django.contrib.auth.models import User
 from djangorest.api.models import Bucketlist
 
 
 class ModelTestCase(TestCase):
     def setUp(self):
-        self.bucketlist_name = 'Write world class code'
-        self.bucketlist = Bucketlist(name=self.bucketlist_name)
+        user = User.objects.create(username="John")
+        self.name = 'Write world class code'
+        self.bucketlist = Bucketlist(name=self.name, owner=user)
 
     def test_model_create_bucketlist(self):
         """Test the bucketlist model can create a bucketlist"""
@@ -21,4 +23,4 @@ class ModelTestCase(TestCase):
 
     def test_str(self):
         """Check __str__ return name field"""
-        self.assertEqual('Write world class code', str(self.bucketlist_name))
+        self.assertEqual('Write world class code', str(self.name))
