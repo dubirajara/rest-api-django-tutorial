@@ -2,9 +2,10 @@ language: python
 python:
   - "3.6.0"
 install:
-# command to install dependencies
-install: "init"
-
-# command to run tests
+  - pip install pipenv
+  - pipenv lock
+  - pipenv install
+before_script:
+  - python manage.py migrate
 script:
-    - make test
+  - pipenv run manage.py test
