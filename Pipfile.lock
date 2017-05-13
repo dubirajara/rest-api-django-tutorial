@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c76a71b956c976370ff3156cef06cafaea2772473a6f2973f403885ec4a6f006"
+            "sha256": "77bf0aef554ef0d40e98061dbdf7acce8fb93122edca100c239fb2cab17f8f9c"
         },
         "requires": {},
         "sources": [
@@ -13,12 +13,12 @@
     },
     "default": {
         "Django": {
-            "hash": "sha256:0120b3b60760fb0617848b58aaa9702c0bf963320ed472f0879c5c55ab75b64a",
-            "version": "==1.11"
+            "hash": "sha256:bb3109a31cfa016e5f234223665f80fc06107f2169afb9f6dc8828295db73547",
+            "version": "==1.11.1"
         },
         "djangorestframework": {
-            "hash": "sha256:3dc4bb6377dd1d58d8e2adc908d4f2e3bca5d8d0fb8323c49f57c8c8d407f6ec",
-            "version": "==3.6.2"
+            "hash": "sha256:bb9d55997a71fb1c844cd84c15cbe2e87d2ec8493a685f96aa3db403760626b7",
+            "version": "==3.6.3"
         },
         "pytz": {
             "hash": "sha256:d1d6729c85acea5423671382868627129432fba9a89ecbb248d8d1c7a9f01c67",
