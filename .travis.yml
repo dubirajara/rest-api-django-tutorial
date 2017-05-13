@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.6.0"
+install:
+# command to install dependencies
+install: "make"
+
+# command to run tests
+script:
+    - make test
