@@ -5,6 +5,8 @@ install:
   - pip install pipenv
   - pipenv install
 before_script:
+  - pipenv shell
   - python manage.py migrate
 script:
   - pipenv run manage.py test
+
