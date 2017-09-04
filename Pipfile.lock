@@ -3,6 +3,7 @@
         "hash": {
             "sha256": "77bf0aef554ef0d40e98061dbdf7acce8fb93122edca100c239fb2cab17f8f9c"
         },
+        "pipfile-spec": 1,
         "requires": {},
         "sources": [
             {
@@ -12,16 +13,13 @@
         ]
     },
     "default": {
-        "Django": {
-            "hash": "sha256:c69e0c0416f2376b677830304d4c5fa8793b9c815af77be659a3c50d1f46c2e6",
-            "version": "==1.11.3"
+        "django": {
+            "version": "==1.11.4"
         },
         "djangorestframework": {
-            "hash": "sha256:bb9d55997a71fb1c844cd84c15cbe2e87d2ec8493a685f96aa3db403760626b7",
-            "version": "==3.6.3"
+            "version": "==3.6.4"
         },
         "pytz": {
-            "hash": "sha256:d1d6729c85acea5423671382868627129432fba9a89ecbb248d8d1c7a9f01c67",
             "version": "==2017.2"
         }
     },
