@@ -14,7 +14,7 @@
     },
     "default": {
         "django": {
-            "version": "==1.11.4"
+            "version": "==1.11.5"
         },
         "djangorestframework": {
             "version": "==3.6.4"
