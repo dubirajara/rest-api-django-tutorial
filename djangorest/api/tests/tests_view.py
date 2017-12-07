@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django.core.urlresolvers import reverse as r
+from django.urls import reverse as r
 
 from django.contrib.auth.models import User
 
