@@ -2,8 +2,9 @@ language: python
 python:
   - 3.6.0
 env:
-  - PIPENV_VENV_IN_PROJECT=1
-  - PIPENV_IGNORE_VIRTUALENVS=1
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
+    - PIPENV_IGNORE_VIRTUALENVS=1
 services: postgresql
 addons:
   postgresql: '9.6'
