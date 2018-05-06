@@ -12,6 +12,7 @@ env:
    - DATABASE_URL=postgres://postgres@localhost/djangoapidb
 install:
   - pip install pipenv
+  - pipenv --three
   - pipenv install
 before_script:
   - psql -c "CREATE DATABASE djangoapidb;" -U postgres
