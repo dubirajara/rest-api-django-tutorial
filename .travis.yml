@@ -11,7 +11,7 @@ install:
   - pipenv install
 before_script:
   - psql -c "CREATE DATABASE djangoapidb;" -U postgres
-  - python manage.py migrate
-  - python manage.py collectstatic --no-input
+  - pipenv run python manage.py migrate
+  - pipenv run python manage.py collectstatic --no-input
 script:
   - pipenv run python manage.py test
