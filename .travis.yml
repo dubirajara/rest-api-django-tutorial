@@ -1,8 +1,17 @@
 language: python
 python:
   - 3.6.0
+services: postgresql
+addons:
+  postgresql: '9.6'
+env:
+   - DATABASE_URL=postgres://postgres@localhost/djangoapidb
 install:
   - pip install pipenv
   - pipenv install
+before_script:
+  - psql -c "CREATE DATABASE djangoapidb;" -U postgres
+  - python manage.py migrate
+  - python manage.py collectstatic --no-input
 script:
   - pipenv run python manage.py test
