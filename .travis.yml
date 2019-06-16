@@ -1,3 +1,4 @@
+dist: xenial
 language: python
 python:
   - "3.6"
@@ -10,6 +11,7 @@ env:
 install:
   - pip install pipenv
   - pipenv install
+  - pipenv install sqlparse
 before_script:
   - psql -c "CREATE DATABASE djangoapidb;" -U postgres
   - pipenv run python manage.py migrate
