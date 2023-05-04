@@ -14,11 +14,8 @@
     },
     "default": {
         "django": {
-            "hashes": [
-                "sha256:642d8eceab321ca743ae71e0f985ff8fdca59f07aab3a9fb362c617d23e33a76",
-                "sha256:d4666c2edefa38c5ede0ec1655424c56dc47ceb04b6d8d62a7eac09db89545c1"
-            ],
-            "version": "==3.0.5"
+            "hashes": [],
+            "version": "==4.2.1"
         },
         "djangorestframework": {
             "hashes": [
